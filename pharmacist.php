@@ -63,7 +63,7 @@ if($_SESSION['user_role'] != 'pharmacist'){
 
 
 $result=mysqli_query($con,"SELECT patient.id as rosheta_id, users.name as user_name, users.date_of_birth as user_birth_date, users.number as user_number
- FROM patient INNER JOIN users ON patient.user_id=users.id WHERE `is_expired` = 0 ") or die(mysqli_error($con));
+FROM patient INNER JOIN users ON patient.user_id=users.id WHERE `is_expired` = 0 ") or die(mysqli_error($con));
 
     if($result->num_rows >0){
         

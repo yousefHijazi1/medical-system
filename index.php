@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,59 +15,54 @@
     <title>Home</title>
 
     <style>
-        body{
+        body {
             background-image: url('images/bg-index2.jpeg');
             background-size: cover;
         }
-        
     </style>
 </head>
+
 <body>
-    
+
     <header class="topnav">
         <a class="Logo" href="index.php" title="Go to Home Page ">Medical System</a>
-        
         <nav class="navigation">
-        
-        <a href="login.php" target="_blank">Login</a>
-        
-        <a href="registration.php" target="_blank">Register</a>
-        
-        
+            <a href="login.php" target="_blank">Login</a>
+            <a href="registration.php" target="_blank">Register</a>
         </nav>
-        </header>
+    </header>
+
+    <div class="re-form" id="rep">
+        <form action="report-action.php" method="POST">
+            <h2>Contact us</h2>
+            <hr>
+            <div class="form-group">
+                <label for="id-email">Email address</label>
+                <input type="email" name="txt-email" class="form-control" id="id-email" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="id-phone">Phone number</label>
+                <input type="number" name="txt-number" class="form-control" id="id-phone" placeholder="70/*******" required>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Put Your Problem Here</label>
+                <textarea class="form-control" name="txt-report" id="exampleFormControlTextarea1" rows="3" required></textarea>
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="btn btn-outline-primary">Send</button>
+                <button type="reset" class="btn btn-outline-primary">Reset</button>
+            </div>
 
 
-        <div class="re-form" id="rep">   
-            <form action="report-action.php" method="POST">
-                <h2>Contact us</h2> <hr>
-                <div class="form-group">
-                    <label for="id-email">Email address</label>
-                    <input type="email" name="txt-email" class="form-control" id="id-email" placeholder="name@example.com" required>
-                </div> 
-                <div class="form-group">
-                    <label for="id-phone">Phone number</label>
-                    <input type="number" name="txt-number" class="form-control" id="id-phone" placeholder="70/*******" required>
-                </div>
-        
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Put Your Problem Here</label>
-                    <textarea class="form-control" name="txt-report" id="exampleFormControlTextarea1" rows="3" required></textarea>
-                </div>
-
-                <div class="buttons">
-                    <button type="submit" class="btn btn-outline-primary">Send</button>
-                    <button type="reset" class="btn btn-outline-primary">Reset</button>
-                </div>
-
-                
-                <div class="social-media" id="social">
-                    <a href="https://www.instagram.com/yousef_hijazee?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/yousef.hiajzi.10/" target="_blank"><i class="fa-brands fa-facebook-square" id="facebook"></i></a>
-                    <a href="mailto:31930337@students.liu.edu.lb" target="_blank"><i class="fa-brands fa-google"></i></a>
-                </div>        
+            <div class="social-media" id="social">
+                <a href="https://www.instagram.com/yousef_hijazee?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/yousef.hiajzi.10/" target="_blank"><i class="fa-brands fa-facebook-square" id="facebook"></i></a>
+                <a href="mailto:31930337@students.liu.edu.lb" target="_blank"><i class="fa-brands fa-google"></i></a>
+            </div>
         </form>
-        </div>
+    </div>
 </body>
-</html>
 
+</html>
