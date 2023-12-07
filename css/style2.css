@@ -1,0 +1,84 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav{
+    background-color: rgb(250, 250, 250);
+    width: 100%;
+    /* position: fixed; */
+    z-index: 999;  /* to still navbar on anything*/
+    display: flex;
+    justify-content: space-between;  /* to put space between the Logo and the other links  */
+    align-items: center;
+    padding: 10px 150px;
+    
+    }
+
+   
+.Logo{
+    text-decoration: none;
+    font-size: 23px;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.7s ease;  /* to slow the action */
+    }
+
+.topnav .Logo:hover{
+    transform: scale(1.15);  /* to give the animation while hover */
+    }
+        
+        
+.navigation a{
+    color: #3a6cf4;    
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 520;
+    text-decoration: none;
+    padding-left: 30px;
+    font-weight: bold;
+    }
+        
+.navigation a:hover{
+    color: #c81cfc;
+    }
+
+
+
+    
+.pt-info{
+    
+    width: 50%;
+    height: 620px;
+    font-weight: bold;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 10px 50px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.pre-report{
+    width: 75%;
+    height: 150px;
+}
+
+.btn{
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 15px;
+    padding: 0px 7px;
+}
+.btn:hover{
+    background-color: rgb(180, 180, 180);
+    
+}
+.buttons{
+    margin-left: 250px;
+}
+
+.pt{
+    margin: 20px;
+    
+}
